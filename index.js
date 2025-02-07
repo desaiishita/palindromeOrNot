@@ -3,13 +3,11 @@ function palorNot () {
     let revNum = 0;
     let numCheck = number; 
 
-    //inspired by Medium @ Alexander Obregon
     if (number < 0 || (number % 10 === 0 && number !== 0)) {
         document.getElementById("returnVal").textContent = number + " is not a palindrome";
         return;
     }
 
-    //inspired by Scaler Topics
     while (number > 0) {    
         revNum = revNum * 10 + (number % 10);
         number = Math.floor (number/10);
